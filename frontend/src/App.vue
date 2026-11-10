@@ -5,7 +5,7 @@ import ControlPanel from './components/ControlPanel.vue'
 import EditorCanvas from './components/EditorCanvas.vue'
 import HistoryPanel from './components/HistoryPanel.vue'
 import LeftToolbar from './components/LeftToolbar.vue'
-import StarfieldBackground from './components/StarfieldBackground.vue'
+import LustreEclipse from './components/LustreEclipse.vue'
 import UploadArea from './components/UploadArea.vue'
 import { useEditorStore } from './stores/editor'
 
@@ -47,7 +47,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <StarfieldBackground />
+  <LustreEclipse />
   <div class="app">
     <header class="app-header liquid-glass">
       <div class="brand">
@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
 
             <div class="settings-bar liquid-glass">
               <div class="setting">
-                <span class="label">笔刷 {{ store.brushSize }}px</span>
+                <span class="label">笔刷大小： {{ store.brushSize }}px</span>
                 <el-slider
                   v-model="store.brushSize"
                   :min="4"
@@ -85,7 +85,7 @@ onBeforeUnmount(() => {
                 />
               </div>
               <div class="setting">
-                <span class="label">遮罩 {{ store.maskOpacity }}%</span>
+                <span class="label">遮罩不透明度： {{ store.maskOpacity }}%</span>
                 <el-slider
                   v-model="store.maskOpacity"
                   :min="10"

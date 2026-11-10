@@ -9,8 +9,7 @@ const dragging = ref(false)
 
 const samples = [
   { url: '/samples/sample-1.jpg', name: '官方示例 1.jpg' },
-  { url: '/samples/sample-2.jpg', name: '官方示例 2.jpg' },
-  { url: '/samples/sample-3.jpg', name: '官方示例 3.jpg' },
+  { url: '/samples/sample-2.png', name: '官方示例 2.png' },
 ]
 
 async function handleFile(file: File | undefined | null) {
@@ -91,13 +90,13 @@ function onDrop(event: DragEvent) {
 }
 
 .upload-bar.dragging {
-  border-color: rgba(2, 132, 199, 0.55);
-  background: rgba(2, 132, 199, 0.1);
+  border-color: rgba(56, 189, 248, 0.65);
+  background: rgba(56, 189, 248, 0.14);
 }
 
 .hint {
   font-size: 12px;
-  color: #64748b;
+  color: #9fadc2;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -107,6 +106,6 @@ function onDrop(event: DragEvent) {
   position: absolute;
   right: 14px;
   font-size: 12px;
-  color: #0284c7;
+  color: #38bdf8;
 }
 </style>

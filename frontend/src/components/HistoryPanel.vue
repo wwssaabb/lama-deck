@@ -59,7 +59,7 @@ const store = useEditorStore()
   margin: 0;
   font-size: 14px;
   font-weight: 600;
-  color: #0f2f4a;
+  color: #f2f6fc;
 }
 
 .count {
@@ -67,8 +67,8 @@ const store = useEditorStore()
   min-width: 20px;
   padding: 0 6px;
   border-radius: 999px;
-  background: rgba(2, 132, 199, 0.14);
-  color: #0369a1;
+  background: rgba(56, 189, 248, 0.2);
+  color: #bae6fd;
   font-size: 11px;
   text-align: center;
   margin-left: 4px;
@@ -90,20 +90,19 @@ const store = useEditorStore()
   gap: 8px;
   padding: 6px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   cursor: pointer;
-  box-shadow: 0 1px 4px rgba(15, 76, 129, 0.07);
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .row:hover {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.11);
 }
 
 .row.active {
-  border-color: rgba(2, 132, 199, 0.55);
-  background: rgba(2, 132, 199, 0.1);
+  border-color: rgba(96, 165, 250, 0.7);
+  background: rgba(56, 189, 248, 0.16);
 }
 
 .row img {
@@ -112,7 +111,7 @@ const store = useEditorStore()
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
-  background: #e2e8f0;
+  background: #0b1220;
 }
 
 .meta {
@@ -122,7 +121,7 @@ const store = useEditorStore()
 
 .line1 {
   font-size: 12px;
-  color: #1e293b;
+  color: #e6edf7;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -130,7 +129,7 @@ const store = useEditorStore()
 
 .line2 {
   font-size: 11px;
-  color: #64748b;
+  color: #93a1b5;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -143,20 +142,20 @@ const store = useEditorStore()
   border-radius: 6px;
   border: none;
   background: transparent;
-  color: #94a3b8;
+  color: #7d8ba1;
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
 }
 
 .del:hover {
-  background: rgba(244, 63, 94, 0.14);
-  color: #e11d48;
+  background: rgba(244, 63, 94, 0.25);
+  color: #fda4af;
 }
 
 .empty {
   margin: 0;
   font-size: 12px;
-  color: #64748b;
+  color: #93a1b5;
 }
 </style>

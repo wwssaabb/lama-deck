@@ -494,7 +494,7 @@ onBeforeUnmount(() => {
   display: block;
   touch-action: none;
   cursor: crosshair;
-  box-shadow: 0 10px 34px rgba(15, 76, 129, 0.28);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.5);
 }
 
 .view-canvas.panning {
@@ -520,10 +520,10 @@ onBeforeUnmount(() => {
   border-radius: 999px;
   font-size: 13px;
   font-weight: 600;
-  color: #075985;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(2, 132, 199, 0.45);
-  box-shadow: 0 6px 20px rgba(15, 76, 129, 0.18);
+  color: #bae6fd;
+  background: rgba(13, 18, 30, 0.86);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(8px);
   pointer-events: none;
 }
@@ -536,7 +536,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #64748b;
+  color: #9fadc2;
   font-size: 13px;
   pointer-events: none;
   text-align: center;
@@ -545,12 +545,12 @@ onBeforeUnmount(() => {
 
 .empty-state .title {
   font-size: 16px;
-  color: #1e293b;
+  color: #eef3fa;
   font-weight: 600;
 }
 
 .empty-state .keys {
   font-size: 12px;
-  color: #94a3b8;
+  color: #7d8ba1;
 }
 </style>

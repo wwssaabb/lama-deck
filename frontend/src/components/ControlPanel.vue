@@ -107,7 +107,7 @@ async function run() {
       {{ store.running ? '修复中…' : '开始修复' }}
     </el-button>
     <p class="tip center">
-      {{ store.hasMask ? '遮罩已就绪' : '先在画布上涂抹要移除的区域' }}
+      {{ store.hasMask ? '遮罩已就绪' : '请先在画布上涂抹要移除的区域' }}
     </p>
   </div>
 
@@ -154,7 +154,7 @@ async function run() {
 .tip {
   margin: 6px 0 0;
   font-size: 12px;
-  color: #64748b;
+  color: #93a1b5;
   line-height: 1.5;
 }
 
@@ -172,12 +172,12 @@ async function run() {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
-  color: #64748b;
+  color: #93a1b5;
 }
 
 .kv b {
   font-weight: 500;
-  color: #0f2f4a;
+  color: #e6edf7;
   font-variant-numeric: tabular-nums;
 }
 </style>

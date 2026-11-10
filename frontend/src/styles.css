@@ -18,12 +18,11 @@ body {
     'PingFang SC',
     'Microsoft YaHei',
     sans-serif;
-  color: #334155;
-  background-color: #eaf4ff;
+  color: #e6edf7;
+  background-color: #070a12;
   background-image:
-    radial-gradient(1000px 560px at 15% -10%, rgba(255, 255, 255, 0.95), transparent 62%),
-    radial-gradient(900px 520px at 92% -6%, rgba(254, 240, 138, 0.35), transparent 60%),
-    linear-gradient(168deg, #e0f0ff 0%, #eef8ff 45%, #e6fbf7 100%);
+    radial-gradient(1100px 620px at 18% -12%, rgba(56, 189, 248, 0.2), transparent 62%),
+    linear-gradient(165deg, #070a12 0%, #0a1120 50%, #0c1a2e 100%);
   background-attachment: fixed;
 }
 
@@ -31,37 +30,37 @@ button {
   font-family: inherit;
 }
 
-:root {
-  --el-color-primary: #0284c7;
-  --el-color-primary-light-3: #38a3d1;
-  --el-color-primary-light-5: #6ec2e6;
-  --el-color-primary-light-7: #a3d9f2;
-  --el-color-primary-light-8: #c1e6f7;
-  --el-color-primary-light-9: #e6f5fd;
-  --el-color-primary-dark-2: #036ea6;
-  --el-text-color-primary: #1e293b;
-  --el-text-color-regular: #475569;
-  --el-text-color-secondary: #64748b;
-  --el-border-color: #dbe4ee;
-  --el-border-color-light: #e6edf5;
-  --el-fill-color-light: #f3f7fb;
-  --el-bg-color-overlay: #ffffff;
+.dark {
+  --el-color-primary: #38bdf8;
+  --el-color-primary-light-3: #7dd3fc;
+  --el-color-primary-light-5: #a5e3fc;
+  --el-color-primary-light-7: #c8eefd;
+  --el-color-primary-light-8: #dbf4fe;
+  --el-color-primary-light-9: #ecfaff;
+  --el-color-primary-dark-2: #2ba3d4;
+  --el-text-color-primary: #e6edf7;
+  --el-text-color-regular: #c3cede;
+  --el-text-color-secondary: #93a1b5;
+  --el-border-color: rgba(255, 255, 255, 0.16);
+  --el-border-color-light: rgba(255, 255, 255, 0.12);
+  --el-fill-color-light: rgba(255, 255, 255, 0.06);
+  --el-bg-color-overlay: #161c2a;
 }
 
 .liquid-glass {
   background: linear-gradient(
     140deg,
-    rgba(255, 255, 255, 0.78),
-    rgba(255, 255, 255, 0.55) 45%,
-    rgba(255, 255, 255, 0.42)
+    rgba(22, 27, 40, 0.74),
+    rgba(16, 20, 32, 0.62) 45%,
+    rgba(13, 17, 28, 0.56)
   );
-  backdrop-filter: blur(26px) saturate(165%);
-  -webkit-backdrop-filter: blur(26px) saturate(165%);
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(26px) saturate(155%);
+  -webkit-backdrop-filter: blur(26px) saturate(155%);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   box-shadow:
-    0 12px 34px rgba(15, 76, 129, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.5);
+    0 14px 38px rgba(2, 6, 16, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .liquid-glass::after {
@@ -72,8 +71,8 @@ button {
   border-radius: inherit;
   pointer-events: none;
   background:
-    radial-gradient(120% 78% at 16% -12%, rgba(255, 255, 255, 0.85), transparent 58%),
-    radial-gradient(90% 60% at 100% 112%, rgba(103, 232, 249, 0.28), transparent 62%);
+    radial-gradient(120% 78% at 16% -12%, rgba(255, 255, 255, 0.12), transparent 58%),
+    radial-gradient(90% 60% at 100% 112%, rgba(56, 189, 248, 0.14), transparent 62%);
 }
 
 .liquid-glass > * {
@@ -113,13 +112,12 @@ button {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #0f2f4a;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: #f8fbff;
 }
 
 .brand .sub {
   font-size: 12px;
-  color: #64748b;
+  color: #9fadc2;
   white-space: nowrap;
 }
 
@@ -137,41 +135,40 @@ button {
   gap: 6px;
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   font-size: 12px;
-  color: #334155;
+  color: #dbe4f1;
 }
 
 .chip .dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #10b981;
-  box-shadow: 0 0 7px rgba(16, 185, 129, 0.75);
+  background: #34d399;
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.85);
 }
 
 .chip.warn {
-  background: rgba(255, 251, 235, 0.92);
-  border-color: rgba(253, 230, 138, 0.9);
-  color: #92400e;
+  background: rgba(251, 146, 60, 0.16);
+  border-color: rgba(251, 146, 60, 0.4);
+  color: #fed7aa;
 }
 
 .chip.warn .dot {
-  background: #f59e0b;
-  box-shadow: 0 0 7px rgba(245, 158, 11, 0.75);
+  background: #fb923c;
+  box-shadow: 0 0 8px rgba(251, 146, 60, 0.85);
 }
 
 .chip.off {
-  background: rgba(255, 241, 242, 0.92);
-  border-color: rgba(253, 164, 175, 0.9);
-  color: #9f1239;
+  background: rgba(244, 63, 94, 0.16);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #fecdd3;
 }
 
 .chip.off .dot {
-  background: #f43f5e;
-  box-shadow: 0 0 7px rgba(244, 63, 94, 0.75);
+  background: #fb7185;
+  box-shadow: 0 0 8px rgba(251, 113, 133, 0.85);
 }
 
 .workspace {
@@ -218,22 +215,25 @@ button {
   position: relative;
   flex: 1;
   min-height: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.55);
+  /* background-color: rgba(6, 10, 18, 0.5); */
+  background-color: rgba(6, 10, 18, 0.9);
   background-image:
-    linear-gradient(45deg, rgba(148, 163, 184, 0.16) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(148, 163, 184, 0.16) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(148, 163, 184, 0.16) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(148, 163, 184, 0.16) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.045) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.045) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.045) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.045) 75%);
   background-size: 22px 22px;
   background-position:
     0 0,
     0 11px,
     11px -11px,
     -11px 0;
-  box-shadow: inset 0 2px 14px rgba(15, 76, 129, 0.08);
+  box-shadow: inset 0 2px 16px rgba(0, 0, 0, 0.35),0 14px 38px rgba(2, 6, 16, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.16), inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(26px) saturate(155%);
+  -webkit-backdrop-filter: blur(26px) saturate(155%);
 }
 
 .settings-bar {
@@ -267,14 +267,14 @@ button {
 
 .settings-bar .label {
   font-size: 12px;
-  color: #334155;
+  color: #dbe4f1;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
 
 .settings-bar .hint {
   font-size: 12px;
-  color: #64748b;
+  color: #93a1b5;
   white-space: nowrap;
 }
 
@@ -288,7 +288,7 @@ button {
   margin: 0 0 12px;
   font-size: 14px;
   font-weight: 600;
-  color: #0f2f4a;
+  color: #f2f6fc;
 }
 
 .panel .field {
@@ -304,12 +304,12 @@ button {
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
-  color: #475569;
+  color: #b6c2d4;
   margin-bottom: 6px;
 }
 
 .field-label .value {
-  color: #0284c7;
+  color: #7dd3fc;
   font-variant-numeric: tabular-nums;
 }
 
@@ -321,7 +321,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #64748b;
+  color: #9fadc2;
   font-size: 13px;
   pointer-events: none;
   text-align: center;
@@ -330,13 +330,13 @@ button {
 
 .empty-state .title {
   font-size: 15px;
-  color: #1e293b;
+  color: #eef3fa;
   font-weight: 600;
 }
 
 .empty-state .keys {
   font-size: 12px;
-  color: #94a3b8;
+  color: #7d8ba1;
 }
 
 ::-webkit-scrollbar {
@@ -345,7 +345,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.35);
+  background: rgba(148, 163, 184, 0.35);
   border-radius: 999px;
 }
 

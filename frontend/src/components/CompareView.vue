@@ -87,16 +87,16 @@ function download() {
   padding: 12px;
   background: linear-gradient(
     140deg,
-    rgba(255, 255, 255, 0.82),
-    rgba(255, 255, 255, 0.62) 45%,
-    rgba(255, 255, 255, 0.5)
+    rgba(18, 23, 36, 0.76),
+    rgba(14, 18, 30, 0.66) 45%,
+    rgba(11, 15, 26, 0.6)
   );
-  backdrop-filter: blur(26px) saturate(165%);
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(26px) saturate(155%);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 20px;
   box-shadow:
-    0 12px 34px rgba(15, 76, 129, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    0 14px 38px rgba(2, 6, 16, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
 }
 
 .head {
@@ -116,12 +116,12 @@ function download() {
 .title {
   font-size: 14px;
   font-weight: 600;
-  color: #0f2f4a;
+  color: #f2f6fc;
 }
 
 .meta {
   font-size: 12px;
-  color: #64748b;
+  color: #93a1b5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -139,8 +139,8 @@ function download() {
   min-height: 0;
   overflow: hidden;
   border-radius: 12px;
-  background: #eef2f7;
-  box-shadow: inset 0 2px 12px rgba(15, 76, 129, 0.1);
+  background: #060a12;
+  box-shadow: inset 0 2px 14px rgba(0, 0, 0, 0.55);
   touch-action: none;
   cursor: ew-resize;
   user-select: none;
@@ -184,7 +184,7 @@ function download() {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(15, 76, 129, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
 .tag {
@@ -192,11 +192,11 @@ function download() {
   top: 12px;
   padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  color: #334155;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #e2e8f0;
   font-size: 12px;
-  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.14);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   pointer-events: none;
 }
 
@@ -214,12 +214,11 @@ function download() {
   left: 50%;
   transform: translateX(-50%);
   font-size: 11px;
-  color: #475569;
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(255, 255, 255, 0.95);
+  color: #cbd5e1;
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   padding: 3px 12px;
   border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.12);
   pointer-events: none;
 }
 </style>
