@@ -1,0 +1,5 @@
+# CPU 版 torch 体积更小：pip install -r requirements-lama.txt -f https://download.pytorch.org/whl/cpu
+-r requirements.txt
+torch>=2.2
+torchvision>=0.17
+simple-lama-inpainting>=0.1.2
